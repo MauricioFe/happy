@@ -17,6 +17,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
+    background: url('../../images/landing.svg') no-repeat 80% center;
 }
 
 #page-landing .content-wrapper main {
@@ -61,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 2s;
+    transition: background-color 1s;
 }
 
 .content-wrapper .enter-app:hover {
