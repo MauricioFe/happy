@@ -1,4 +1,9 @@
-import React from 'react'
+import React from 'react';
+import mapMakerImg from '../images/map-marker.svg';
+import { FiPlus } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import '../styles/pages/orphanages-map.css';
+
 
 export default function OrphanagesMap() {
     return (
@@ -14,6 +19,11 @@ export default function OrphanagesMap() {
                     <span>Minas Gerais</span>
                 </footer>
             </aside>
+            <div></div>
+
+            <Link to="" className="create-orphanage">
+                <FiPlus size={32} color="#fff"/>
+            </Link>
         </div>
     )
 }
