@@ -40,7 +40,7 @@ export default function OrphanagesMap() {
 
             <Map center={[-19.8781429, -43.9268517]} zoom={15} style={{ width: '100%', height: '100%' }}>
 
-                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoic3dhcmxleSIsImEiOiJja2djZ2dmaWcwZTQ4MnJwNDJwdWc3a3NyIn0.PiLeBjPCkil_D59b6pIOVg`} />
+                <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`} />
                 {
                     orphanages.map(orphanage => {
                         return (
