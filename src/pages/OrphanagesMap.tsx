@@ -2,7 +2,7 @@ import React from 'react';
 import mapMakerImg from '../images/map-marker.svg';
 import { FiPlus } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import { Map, TileLayer } from 'react-leaflet';
+import { Map, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import '../styles/pages/orphanages-map.css';
