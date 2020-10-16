@@ -1,5 +1,5 @@
 import React from 'react';
-import mapMakerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../images/map-marker.svg';
 import { FiArrowRight, FiPlus } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -9,7 +9,7 @@ import '../styles/pages/orphanages-map.css';
 
 
 const mapIcon = leaflet.icon({
-    iconUrl: mapMakerImg,
+    iconUrl: mapMarkerImg,
     iconSize: [58, 68],
     iconAnchor: [29, 68],
     popupAnchor: [170, 2]
@@ -20,7 +20,7 @@ export default function OrphanagesMap() {
         <div id="page-map">
             <aside>
                 <header>
-                    <img src={mapMakerImg} alt="Happy" />
+                    <img src={mapMarkerImg} alt="Happy" />
                     <h2>Escolha um orfanato no mapa</h2>
                     <p>Muitas crianças estão esperando sua visita :)</p>
                 </header>
