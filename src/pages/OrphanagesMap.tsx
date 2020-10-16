@@ -50,7 +50,7 @@ export default function OrphanagesMap() {
                                 key={orphanage.id}>
                                 <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                                     {orphanage.name}
-                                    <Link to={`/orphanages/${orphanage.id}`}>
+                                    <Link to={`/orphanage/${orphanage.id}`}>
                                         <FiArrowRight size={20} color="#fff" />
                                     </Link>
                                 </Popup>

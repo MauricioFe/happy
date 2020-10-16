@@ -18,7 +18,7 @@ interface Orphanage {
   opening_hours: string;
   open_on_weekends: boolean;
   images: Array<{
-    path: string;
+    url: string;
     id: number;
   }>
 }
@@ -43,12 +43,14 @@ export default function Orphanage() {
   }
 
   return (
+
     <div id="page-orphanage">
       <Sidebar />
       <main>
-        <div className="orphanage-details">
-          <img src={orphanage.images[activeImageIndex].path} alt={orphanage.name} />
 
+        <div className="orphanage-details">
+          {console.log(orphanage.images[activeImageIndex].url)}
+          <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
           <div className="images">
             {orphanage.images.map((image, index) => {
               return (
@@ -58,7 +60,7 @@ export default function Orphanage() {
                   onClick={() => {
                     setActiveImageIndex(index);
                   }}>
-                  <img src={image.path} alt={orphanage.name} />
+                  <img src={image.url} alt={orphanage.name} />
                 </button>
               );
             })}
@@ -100,7 +102,9 @@ export default function Orphanage() {
                 <FiClock size={32} color="#15B6D6" />
                 {orphanage.opening_hours}
               </div>
+              {console.log(orphanage.open_on_weekends)}
               {
+
                 orphanage.open_on_weekends ? (
                   <div className="open-on-weekends">
                     <FiInfo size={32} color="#39CC83" />
